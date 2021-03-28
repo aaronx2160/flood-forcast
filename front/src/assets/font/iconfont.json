@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1348241",
+      "name": "概况（pitch on）",
+      "font_class": "gaikuangpitchon",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2237858",
+      "name": "系统管理-01",
+      "font_class": "xitongguanli-",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3978401",
+      "name": "监控",
+      "font_class": "jiankong",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "8802621",
+      "name": "升版-升级",
+      "font_class": "shengban-shengji",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "9059906",
+      "name": "任务",
+      "font_class": "renwu",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "16158787",
+      "name": "数据分析",
+      "font_class": "shujufenxi",
+      "unicode": "e7dd",
+      "unicode_decimal": 59357
+    },
+    {
+      "icon_id": "17523074",
+      "name": "日志-终端",
+      "font_class": "rizhi-zhongduan",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "19052905",
+      "name": "日志",
+      "font_class": "rizhi",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}
