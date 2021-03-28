@@ -14,5 +14,6 @@ const getters = {
   permission_routers: state => state.permission.routers,
   addRouters: state => state.permission.addRouters,
   siderbar_routers:state => state.permission.siderbar_routers,
+  roleId:state=>state.user.roleId
 };
 export default getters

@@ -31,7 +31,7 @@ export const constantRouterMap = [
 ]
 
 export default new Router({
-  mode: 'hash', 
+  mode: 'hash',
   linkActiveClass: 'open active',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
@@ -78,7 +78,7 @@ export const asyncRouterMap = [
       {path: '/tabledetail/:id',name: 'TableDetail', hidden:true, component: _import('TableDetail')},
       // {path: '/tinymce',name: 'Tinymce编辑器',icon:"android-document",component: _import('Tinymce')},
       {path: '/markdown',name: 'Markdown',icon:"android-list",component: _import('Markdown')},
-      
+
     ]
   },
 
@@ -91,11 +91,11 @@ export const asyncRouterMap = [
     children: [
      {path: '/home1/dashboard',name: 'Dashboard2',icon:'speedometer',component: _import('Dashboard2')},
      {path: '/home1/introduction',name: '介绍2',icon:'thumbsup',component: _import('Introduction')},
-    
+
     ]
   },
 
 
   { path: '*', redirect: '/pages/404', hidden: true }
-  
+
 ];

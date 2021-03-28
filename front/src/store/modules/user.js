@@ -19,8 +19,8 @@ const user = {
     setting: {
       articlePlatform: []
     },
-    roles:['admin'],
-    menuList:[]
+    menuList:[],
+    roles:['admin']
   },
 
   mutations: {
@@ -65,6 +65,9 @@ const user = {
     },
     LOGOUT_USER: state => {
       state.user = '';
+    },
+    SET_ROLEID:(state,roleId)=>{
+      state.roleId =roleId
     }
   },
 
@@ -74,10 +77,15 @@ const user = {
       const username = userInfo.username.trim();
       return new Promise((resolve, reject) => {
         loginByEmail(username, userInfo.password).then(response => {
-          const data = response.data;
-          Cookies.set('Admin-Token', response.data.token);
-          commit('SET_TOKEN', data.token);
-          resolve(response);
+          const result = response.data;
+          if (result.meta.status!==200){
+            reject(result.meta.msg)
+          }else{
+            Cookies.set('Admin-Token', result.data.token);
+            commit('SET_TOKEN', result.data.token);
+            commit('SET_ROLEID',result.data.roleId)
+            resolve(response);
+          }
         }).catch(error => {
           reject(error);
         });

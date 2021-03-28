@@ -104,7 +104,8 @@ animate();
                 this.loading = false;
                 this.$router.push({ path: '/' });
               }).catch(err => {
-                this.$message.error(err);
+                  console.log(err)
+                this.$Message.error(err.toString());
                 this.loading = false;
               });
             } else {
@@ -133,7 +134,7 @@ var windowHalfY = window.innerHeight / 2;
 
 function init() {
 
-  
+
 
 }
 
@@ -241,7 +242,7 @@ function render() {
       font-size: 14px;
       color: #fff;
       margin-bottom: 5px;
-    } 
+    }
     .login-container {
         height: 100vh;
         background-color: #2d3a4b;
